@@ -81,6 +81,14 @@ const AGENT_DESCRIPTIONS: Record<string, string> = {
 - **Result handling:** Council returns a structured response that may include: synthesized Council Response, individual Councillor Details, and Council Summary/confidence. Preserve that structure when the user asked for council output. Do not pretend the council only returned a final answer. If you need to act on the council result, first briefly state the council's recommendation, then proceed.
 - **Rule of thumb:** Need second/third opinions from different models? → @council. Need one expert agent or direct execution? → use the specialist or yourself.`,
 
+  codexer: `@codexer
+- Role: Documentation specialist for generating, refining, and maintaining project documentation
+- Permissions: Read/write files
+- Stats: 5x better technical writing than orchestrator
+- Capabilities: Writes READMEs, API specifications, changelogs, and architecture documents
+- **Delegate when:** Documentation tasks (READMEs, API specs, changelogs) • Synthesizing commit history • Reviewing markdown formatting
+- **Don't delegate when:** Writing functional application code • Small inline code comments`,
+
   observer: `@observer
 - Role: Visual analysis specialist for images, PDFs, and diagrams
 - Permissions: Read files

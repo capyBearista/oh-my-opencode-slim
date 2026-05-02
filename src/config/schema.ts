@@ -9,6 +9,7 @@ const FALLBACK_AGENT_NAMES = [
   'explorer',
   'librarian',
   'fixer',
+  'codexer',
 ] as const;
 
 const MANUAL_AGENT_NAMES = [
@@ -18,6 +19,7 @@ const MANUAL_AGENT_NAMES = [
   'explorer',
   'librarian',
   'fixer',
+  'codexer',
 ] as const;
 
 export const ProviderModelIdSchema = z

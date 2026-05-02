@@ -22,6 +22,7 @@ import { createFixerAgent } from './fixer';
 import { createLibrarianAgent } from './librarian';
 import { createObserverAgent } from './observer';
 import { createOracleAgent } from './oracle';
+import { createCodexerAgent } from './codexer';
 import {
   type AgentDefinition,
   createOrchestratorAgent,
@@ -206,6 +207,7 @@ const SUBAGENT_FACTORIES: Record<SubagentName, AgentFactory> = {
   observer: createObserverAgent,
   council: createCouncilAgent,
   councillor: createCouncillorAgent,
+  codexer: createCodexerAgent,
 };
 
 // Public API

@@ -2,6 +2,8 @@
 export const AGENT_ALIASES: Record<string, string> = {
   explore: "explorer",
   "frontend-ui-ux-engineer": "designer",
+  docs: "codexer",
+  doc: "codexer",
 };
 
 export const SUBAGENT_NAMES = [
@@ -13,6 +15,7 @@ export const SUBAGENT_NAMES = [
   "observer",
   "council",
   "councillor",
+  "codexer",
 ] as const;
 
 export const ORCHESTRATOR_NAME = "orchestrator" as const;
@@ -38,6 +41,7 @@ export const ORCHESTRATABLE_AGENTS = [
   "fixer",
   "observer",
   "council",
+  "codexer",
 ] as const;
 
 /** Agents that cannot be disabled even if listed in disabled_agents config. */
@@ -63,6 +67,7 @@ export const SUBAGENT_DELEGATION_RULES: Record<AgentName, readonly string[]> = {
   observer: [],
   council: [],
   councillor: [],
+  codexer: [],
 };
 
 // Default models for each agent
@@ -77,6 +82,7 @@ export const DEFAULT_MODELS: Record<AgentName, string | undefined> = {
   observer: "openai/gpt-5.4-mini",
   council: "openai/gpt-5.4-mini",
   councillor: "openai/gpt-5.4-mini",
+  codexer: "openai/gpt-5.4-mini",
 };
 
 // Polling configuration
