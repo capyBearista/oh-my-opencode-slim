@@ -18,7 +18,7 @@ Modify `oh-my-opencode-slim.json` (located at `~/.config/opencode/oh-my-opencode
       "librarian": { "model": "google/gemini-3-flash-preview", "variant": "low", "skills": [], "mcps": ["websearch", "context7", "grep_app"] },
       "explorer": { "model": "google/gemini-3-flash-preview", "variant": "medium", "skills": [], "mcps": [] },
       "designer": { "model": "google/gemini-3.1-pro-preview", "variant": "medium", "skills": ["agent-browser, impeccable"], "mcps": [] },
-      "fixer": { "model": "github-copilot/gpt-5.2-codex", "variant": "xhigh", "skills": [], "mcps": [] },
+      "fixer": { "model": "github-copilot/gpt-5.2-codex", "variant": "high", "skills": [], "mcps": [] },
       "council": { "model": "google/gemini-3.1-pro-preview" }
     }
   },
@@ -34,7 +34,7 @@ Modify `oh-my-opencode-slim.json` (located at `~/.config/opencode/oh-my-opencode
       "default": {
         "alpha": { "model": "opencode-go/kimi-k2.6" },
         "beta": { "model": "google/gemini-3.1-pro-preview", "variant": "medium"},
-        "gamma": { "model": "github-copilot/gpt-5.2", "variant": "xhigh" }
+        "gamma": { "model": "github-copilot/gpt-5.2", "variant": "high" }
       }
     }
   },
